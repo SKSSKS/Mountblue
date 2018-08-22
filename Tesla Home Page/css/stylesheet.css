@@ -1,0 +1,304 @@
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.project {
+    min-height: 700px;
+    background-size: cover;
+    position: relative;
+}
+
+.car-model-s {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.car-model-x {
+    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/mx/homepage-modelx.jpg?20180712p");
+}
+
+.car-model-3 {
+    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/m3/homepage-model3.jpg?20180712p");
+}
+
+.solar {
+    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/energy/homepage-energy.jpg?20180712p");
+}
+
+header {
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo-wrp {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.business-wrp {
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.products-wrp {
+    flex: 2;
+    display: flex;
+}
+
+.products {
+    display: flex;
+    margin: auto;
+}
+
+.products li {
+    margin-right: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 17px;
+    line-height: 17.5px;
+}
+
+.products li:hover, .business li:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: auto;
+}
+
+.more {
+    display: block;
+    position: relative;
+    margin: auto;
+    border-bottom: 2px solid white;
+    width: 20px;
+}
+
+.more::before, .more::after {
+    content: "";
+    width: 20px;
+    position: absolute;
+    border-bottom: 2px solid white;
+}
+
+.more::before {
+    bottom: 3px;
+}
+
+.more::after {
+    top: 5px;
+}
+
+.business {
+    display: flex;
+}
+
+.business li {
+    margin-right: 20px;
+}
+
+.model-name {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.solar-quotes {
+    color: rgb(34, 34, 34);
+    text-align: center;
+    font-family: 'Gotham Light';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+}
+product-content--lede {
+    
+}
+
+.btn-list-wrp {
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn-list {
+    display: flex;
+    margin: auto;
+}
+
+.btn-list li {
+    border: 3px solid rgb(34, 34, 34);
+    padding: 10px 40px;
+    margin: 3px 5px;
+    border-radius: 25px;
+    min-width: 140px;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-list li:first-child {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.btn-list li:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    display: flex;
+}
+footer ul{
+    color: rgb(160, 160, 160);
+    display: flex;
+    margin: auto;
+}
+
+footer ul li{
+    color: white;
+    font-size: 12px;
+}
+
+footer ul li::after {
+    padding-left: 15px;
+    padding-right: 13px;
+    display: inline;
+    content: '\2022';
+    color: rgba(255,255,255,0.5);
+}
+footer ul li:last-child {
+    width: 20px;
+}
+
+footer ul li:last-child::after {
+    content: none;
+}
+
+footer ul li:last-child img {
+    width: 100%;
+}
+
+.newsletter {
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.newsletter h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(34, 34, 34);
+    padding: 0 15px;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.privacy-policy {
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    margin: auto;
+}
+.privacy-policy ul {
+    margin: auto;
+}
+
+.privacy-policy ul li {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.privacy-policy li:last-child {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+}
+
+.location-wrp {
+    margin: auto;
+    display: flex;
+}
+
+.location {
+    width: 30px;
+    margin-right: 5px;
+}
+.privacy-policy li img {
+    width: 100%;
+}
+@media (max-width: 937px) {
+    .products {
+        display: none;
+    }
+
+    .business {
+        display: none;
+    }
+
+    .btn-list-wrp {
+        display: block;
+        position: absolute;
+    }
+
+    .btn-list li {
+        border-color: white;
+        background-color: white;
+        width: 100%;
+        color: rgb(34, 34, 34);
+    }
+}
+
+@media (max-width: 634px) {
+    .show-on-mobile {
+        display: block;
+    }
+
+    footer {
+        display: none;
+    }
+}
