@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .project {
     position: relative;
 }
@@ -8,40 +12,7 @@
     object-position: center center;
 }
 
-.model-s {
+.model-wrp {
     position: absolute;
-}
-
-header nav {
-    padding: 20px;
-}
-.logo-wrp {
-    height: 15px;
-}
-
-.logo {
-    height: 100%;
-}
-
-.more {
-    display: block;
-    position: relative;
-    margin: auto;
-    border-bottom: 2px solid white;
-    width: 20px;
-}
-
-.more::before, .more::after {
-    content: "";
-    width: 20px;
-    position: absolute;
-    border-bottom: 2px solid white;
-}
-
-.more::before {
-    bottom: 3px;
-}
-
-.more::after {
-    top: 5px;
+    width: 100%;
 }

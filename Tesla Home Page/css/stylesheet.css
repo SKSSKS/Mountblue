@@ -19,20 +19,21 @@ body {
     width: 100%;
 }
 
-.car-model-x {
+
+/* .car-model-x {
     background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/mx/homepage-modelx.jpg?20180712p");
-}
+} */
 
-.car-model-3 {
-    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/m3/homepage-model3.jpg?20180712p");
-}
-
-.solar {
-    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/energy/homepage-energy.jpg?20180712p");
+.model img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 header {
     padding: 10px 20px;
+    position: absolute;
+    width: 100%;
 }
 
 .nav {
@@ -40,9 +41,7 @@ header {
 }
 
 .logo-wrp {
-    height: 40px;
-    display: flex;
-    align-items: center;
+    height: 12px;
 }
 
 .business-wrp {
@@ -78,10 +77,7 @@ header {
 }
 
 .logo {
-    color: white;
-    font-weight: 600;
-    letter-spacing: 5px;
-    margin: auto;
+    height: 100%;
 }
 
 .more {
@@ -145,6 +141,7 @@ product-content--lede {
 }
 
 .btn-list li {
+    width: 180px;
     border: 3px solid rgb(34, 34, 34);
     padding: 10px 40px;
     margin: 3px 5px;
