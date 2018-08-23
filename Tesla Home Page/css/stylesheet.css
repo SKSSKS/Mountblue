@@ -8,7 +8,6 @@ body {
 }
 
 .project {
-    min-height: 700px;
     background-size: cover;
     position: relative;
 }
@@ -19,20 +18,15 @@ body {
     width: 100%;
 }
 
-
-/* .car-model-x {
-    background-image: url("https://www.tesla.com/sites/default/files/images/homepage/20180710/mx/homepage-modelx.jpg?20180712p");
-} */
-
 .model img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
 }
 
 header {
-    padding: 10px 20px;
-    position: absolute;
+    padding: 20px;
     width: 100%;
 }
 
@@ -141,7 +135,7 @@ product-content--lede {
 }
 
 .btn-list li {
-    width: 180px;
+    width: 205px;
     border: 3px solid rgb(34, 34, 34);
     padding: 10px 40px;
     margin: 3px 5px;
@@ -268,7 +262,8 @@ input[type="submit"] {
 .privacy-policy li img {
     width: 100%;
 }
-@media (max-width: 937px) {
+
+@media (max-width: 855px) {
     .products {
         display: none;
     }
@@ -277,16 +272,12 @@ input[type="submit"] {
         display: none;
     }
 
-    .btn-list-wrp {
+    .btn-list {
         display: block;
-        position: absolute;
     }
 
     .btn-list li {
-        border-color: white;
-        background-color: white;
         width: 100%;
-        color: rgb(34, 34, 34);
     }
 }
 
