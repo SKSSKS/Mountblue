@@ -1,0 +1,244 @@
+@font-face{
+    font-family: 'Roboto';
+    src: local('☺'),url('../fonts/roboto/RobotoCondensed-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Roboto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    padding: 10px 16px;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.logo-wrp {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.logo {
+    margin: auto;
+    height: 24px;
+    width: 24px;
+}
+
+.home {
+    flex: 1;
+    text-align: center;
+    display: flex;
+}
+
+.home-tag {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    color: var(--app-primary-color);
+    text-decoration: none;
+    display: inline-block;
+    pointer-events: auto;
+    color: black;
+}
+
+nav {
+    display: none;
+}
+
+.nav-bar{
+    margin: auto;
+}
+
+.nav-bar li {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.nav-bar li a {
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    outline: none;
+    padding: 9px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.more {
+    display: block;
+    width: 20px;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    position: relative;
+}
+
+.more::before, .more::after {
+    content: "";
+    width: 20px;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    position: absolute;
+}
+
+.more::before {
+    bottom: 3px;
+}
+
+.more::after {
+    bottom: -7px;
+}
+
+.more-option {
+    margin: auto;
+}
+
+.poster {
+    margin-bottom: 10px;
+}
+.poster img {
+    width: 100%;
+}
+
+.label {
+    text-align: center;
+}
+
+.label h1 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 32px 0; 
+    color: rgb(34, 34, 34);
+}
+
+.label a, .btn {
+    display: inline-block;
+    color: rgb(34, 34, 34);
+    padding: 5px 25px;
+    border: 2px solid rgb(34, 34, 34);
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 44px;
+}
+
+.bg-black {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
+.mens, .women {
+    margin-bottom: 40px;
+}
+
+.t-shirt {
+    display: flex;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* items list apge css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-items {
+    margin: 20px;
+}
+
+.grid-items img {
+    width: 100%;
+}
+
+.copy-right {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.copy-right div {
+    margin-bottom: 10px;
+}
+
+/* Desktop */
+@media (min-width: 768px ) {
+    .more {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-items {
+        padding: 20px;
+    }
+}
+
+/* CART */
+
+.cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgb(140, 140, 140);
+}
+
+.cart-logo {
+    height: 24px;
+    width: 24px;
+}
+
+.cart-logo svg {
+    fill: rgb(160, 160, 160);
+}
+
+/* Single item page */
+.wrp-grid {    
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item img {
+    height: 100%;
+}
+
+.cloths-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    margin-bottom: 10px;
+}
+
+select {
+    width: 60%;
+    height: 40px;
+    border: none;
+    margin-left: 40px;
+}
