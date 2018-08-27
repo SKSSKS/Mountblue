@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -23,23 +25,74 @@
             </div>
             <div class="logo-wrp">
                 <div class="logo">
-                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g>
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
+                        </g></svg>
                 </div>
             </div>
         </header>
-        <div class="cart">
+        <!-- <div class="cart">
             <div>Your</div>
             <div class="cart-logo">
                 <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>
             </div>
             <div>Empty</div>
+        </div> -->
+
+        <div class="ordered-clothes-container">
+            <div class="clothes-images">
+                <div class="image-wrp">
+                    <img src="https://shop.polymer-project.org/es6-unbundled/data/images/10-15068B.jpg" alt="">
+                    <label class="btn-hide-on-mobile">Men's Tech Shell Full-Zip</label>
+                </div>
+            </div>
+            <div class="clothes-details">
+                <div class="name">Men's Tech Shell Full-Zip</div>
+                <div class="size-and-qty flex dsp-flex">
+                    <div class="qty">
+                        <span>Qty:</span>
+                        <select>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="size">
+                        <span>Size:</span>
+                        <span>M</span>
+                    </div>
+                </div>
+                <div class="btn-show-on-mobile">
+                    <div class="quantity">
+                        <span>Qty:</span>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="size">
+                        <span>Size:</span>
+                        <span>M</span>
+                    </div>
+                    <div>
+                        <span>$45.98</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-box">
+            <span>Total:</span>
+            <span>$45.67</span>
+            <div class="btn btn-white">CHECKOUT</div>
         </div>
     </div>
     <footer>
-        <div class="copy-right">
+        <div class="copy-right btn-hide-on-mobile">
             <div>Made by Polymer</div>
             <button class="btn bg-black">DEMO ONLY</button>
         </div>
+        <div class="btn bg-blue bg-lg add-to-cart-btn btn-show-on-mobile"> PLACE ORDER</div>
     </footer>
 </body>
+
 </html>

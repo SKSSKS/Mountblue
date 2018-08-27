@@ -133,12 +133,32 @@ nav {
     font-weight: 500;
     margin: 0;
     padding: 8px 44px;
+    text-align: center;
 }
 
+.bg-lg {
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.add-to-cart-btn {
+    width: 100%;
+}
+
+.bg-white {
+    background-color: white;
+    color: rgb(120, 120, 120);
+}
 .bg-black {
     background-color: rgb(34, 34, 34);
     color: white;
 }
+
+.bg-blue {
+    background-color: rgb(7, 7, 90);
+    color: white;
+}
+
 .mens, .women {
     margin-bottom: 40px;
 }
@@ -177,25 +197,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Desktop */
-@media (min-width: 768px ) {
-    .more {
-        display: none;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    .grid-container {
-        grid-template-columns: auto auto auto;
-    }
-
-    .grid-items {
-        padding: 20px;
-    }
-}
-
 /* CART */
 
 .cart {
@@ -214,25 +215,135 @@ footer {
     fill: rgb(160, 160, 160);
 }
 
+.ordered-clothes-container {
+    display: flex;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.clothes-size-and-quantity {
+    flex: 1;
+}
+
+.image-wrp {
+    height: 72px;
+    align-content: center;
+}
+
+.image-wrp label {
+    margin: auto 0;
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+.image-wrp img{
+    height: 100%;
+}
+
+.quantity select {
+    width: 60px;
+}
+
+.clothes-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothes-description .name {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.clothes-details {
+    flex: 1;
+    padding: 0 20px;
+    color: #888787;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    flex: 1;
+}
+
+.size-and-qty {
+} 
+
+.size-and-qty span {
+    
+}
+
+.qty select {
+    width: 60px;
+}
+
+.qty span, .size span, .price span {
+    margin-right: 20px;
+}
+
+.checkout-box {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-box span {
+    margin-right: 30px;
+}
+
 /* Single item page */
 .wrp-grid {    
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.grid-item {
-    font-size: 30px;
+.clothes-specification {
+    color: rgb(160, 160, 160);
+    margin-top: 20px;
+}
+
+.clothes-specification .price {
+    margin-bottom: 10px;
+}
+
+.cloths {
+    flex: 1;
+    margin: 20px;
+}
+
+.cloths img {
+    width: 100%;
+}
+
+.cloths .specification li {
+    display: flex;
     text-align: center;
+    max-width: 500px;
+    border-top: 1px solid rgb(160, 160, 160);
+    border-bottom: 1px solid rgb(160, 160, 160);
+    align-items: center;
 }
 
-.grid-item img {
-    height: 100%;
+.cloths .specification li:last-child {
+    border-top: none;
 }
 
+.cloths .specification label {
+    display: flex;
+    width: 100px;
+}
+
+.specification {
+    max-width: 650px;
+}
 .cloths-name {
     font-size: 24px;
     font-weight: 400;
-    color: rgb(120, 120, 120);
+    color: rgb(34, 34, 34);
     margin-bottom: 10px;
 }
 
@@ -240,5 +351,209 @@ select {
     width: 60%;
     height: 40px;
     border: none;
-    margin-left: 40px;
+    background-color: white;
+    flex: 1;
+    padding: 0 16px;
+}
+
+select option {
+    padding: 10px;
+}
+
+.clothes-fabric-details {
+    list-style: disc;
+    margin-left: 60px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.description-title {
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+.show-on-desktop {
+    display: none;
+}
+
+/* checkout page */
+.checkout-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.user-forms {
+    flex: 1;
+    margin: 20px;
+}
+
+.user-forms h2 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.billing-address div {
+    display: flex;
+}
+
+#billing-address div input {
+    width: 20px;
+}
+
+.billing-address label {
+    flex: 1;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.user-forms form input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
+    outline: none;
+    padding: 8px 0;
+}
+
+.input-area {
+    position: relative;
+    margin: 40px 0;
+}
+
+.input-area label {
+    position: absolute;
+    color: rgb(120, 120, 120);
+    top: 8px;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+.state div, .card-expirey-date div {
+    margin-right: 5px;
+}
+
+.input-area input:focus ~ label {
+    top: -8px;
+    font-size: 12px;
+    color: rgb(34, 34, 34);
+}
+
+.hide-on-mobile  {
+    display: none;
+}
+
+.input-area h6, .card-expirey-date h6 {
+    margin-bottom: 2px;
+    color: rgb(34, 34, 34);
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-expirey-date h6 {
+    color: rgb(34, 34, 34);
+}
+
+.input-area select, .card-expirey-date select {
+    width: 100%;
+    border-bottom: 1px solid #a5a5a5;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    outline: none;
+}
+
+.card-expirey-date .month, .card-expirey-date .year, .card-expirey-date .cvv {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.cvv .input-area {
+    margin: 0;
+}
+
+.cvv .input-area input {
+    min-height: 23px;
+}
+
+.order-sumarry h6 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.order-sumarry {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.order-sumarry ul li {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+}
+
+.order-sumarry ul li:last-child {
+    margin-top: 20px;
+}
+
+.order-sumarry ul li div:first-child {
+    text-align: left;
+    flex: 1;
+}
+
+.order-sumarry ul li div:last-child {
+    width: 50px;
+}
+
+.btn-hide-on-mobile {
+    display: none;
+}
+
+
+/* Desktop */
+@media (min-width: 768px ) {
+    .more {
+        display: none;
+    }
+
+    .hide-on-mobile {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-items {
+        padding: 20px;
+    }
+    
+    .clothes-specification {
+        display: flex;
+    }
+
+    .btn-show-on-mobile {
+        display: none;
+    }
+
+    .show-on-desktop {
+        display: inline-block;
+    }
+
+    .checkout-page, .detail {
+        display: flex;
+    }
+    
 }
