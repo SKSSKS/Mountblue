@@ -19,9 +19,9 @@
                 </div>
             </div>
             <div class="home">
-                <div class="home-tag">
+                <a href="shopping.html" class="home-tag">
                     SHOP
-                </div>
+                </a>
             </div>
             <div class="logo-wrp">
                 <div class="logo">
@@ -39,59 +39,64 @@
             <div>Empty</div>
         </div> -->
 
-        <div class="ordered-clothes-container">
+        <div class="cart-detail">
+            <h1>Your Cart</h1>
+            <p>(1 item)</p>
+        </div>
+        <div class="ordered-clothes-container dsp-flex">
             <div class="clothes-images">
                 <div class="image-wrp">
                     <img src="https://shop.polymer-project.org/es6-unbundled/data/images/10-15068B.jpg" alt="">
                     <label class="btn-hide-on-mobile">Men's Tech Shell Full-Zip</label>
                 </div>
             </div>
-            <div class="clothes-details">
-                <div class="name">Men's Tech Shell Full-Zip</div>
-                <div class="size-and-qty flex dsp-flex">
-                    <div class="qty">
-                        <span>Qty:</span>
-                        <select>
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                        </select>
-                    </div>
-                    <div class="size">
-                        <span>Size:</span>
-                        <span>M</span>
-                    </div>
+            <div class="clothes-details flex">
+                <div class="name-wrp flex">
+                    <span class="name">Men's Tech Shell Full-Zip</span>
                 </div>
-                <div class="btn-show-on-mobile">
-                    <div class="quantity">
-                        <span>Qty:</span>
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="size">
-                        <span>Size:</span>
-                        <span>M</span>
-                    </div>
-                    <div>
-                        <span>$45.98</span>
-                    </div>
+                <div class="details-wrp flex">
+                    <ul>
+                        <li class="qty">
+                            <span>Qty: </span>
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </li>
+                        <li class="size">
+                            <span>Size:</span>
+                            <span>M</span>
+                        </li>
+                        <li class="price">
+                            $45.67
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <div class="remove-item">X</div>
         </div>
         <div class="checkout-box">
             <span>Total:</span>
             <span>$45.67</span>
-            <div class="btn btn-white">CHECKOUT</div>
+            <div class="btn btn-white btn-hide-on-mobile show-on-desktop"><a href="checkout-page.html">CHECKOUT</a></div>
         </div>
     </div>
     <footer>
-        <div class="copy-right btn-hide-on-mobile">
+        <div class="copy-right hide">
             <div>Made by Polymer</div>
             <button class="btn bg-black">DEMO ONLY</button>
         </div>
-        <div class="btn bg-blue bg-lg add-to-cart-btn btn-show-on-mobile"> PLACE ORDER</div>
+        <a href="checkout-page.html">
+            <div class="btn bg-blue bg-lg add-to-cart-btn btn-show-on-mobile"> CHECKOUT</div>
+        </a>
     </footer>
 </body>
 

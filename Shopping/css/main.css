@@ -6,11 +6,15 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: 'Noto', 'sans-serif';
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    padding: 20px;
 }
 
 header {
@@ -168,7 +172,7 @@ nav {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -241,48 +245,50 @@ footer {
     height: 100%;
 }
 
-.quantity select {
-    width: 60px;
+.cart-detail h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);   
 }
 
-.clothes-description {
-    display: flex;
-    justify-content: space-between;
-}
-
-.clothes-description .name {
-    font-size: 14px;
-    color: black;
-    font-weight: 400;
-}
-
-.clothes-details {
-    flex: 1;
-    padding: 0 20px;
-    color: #888787;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
+.cart-detail p {
+    text-align: center;
+    color: rgb(160, 160, 160);
 }
 
 .flex {
     flex: 1;
 }
 
-.size-and-qty {
-} 
-
-.size-and-qty span {
-    
+.name-wrp .name {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.qty select {
-    width: 60px;
+.clothes-details {
+    display: block;
+    align-items: center;
+    margin: 0 20px;
 }
 
-.qty span, .size span, .price span {
-    margin-right: 20px;
+.details-wrp ul {
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(160, 160, 160);
+    font-size: 14px;
 }
+
+.details-wrp ul select {
+    padding: 0;
+}
+
+.clothes-details ul li {
+    width: 75px;
+}
+
 
 .checkout-box {
     max-width: 900px;
@@ -295,6 +301,11 @@ footer {
     margin-right: 30px;
 }
 
+.remove-item  {
+    display: flex;
+    align-items: flex-start;
+}
+
 /* Single item page */
 .wrp-grid {    
     display: grid;
@@ -303,16 +314,25 @@ footer {
 
 .clothes-specification {
     color: rgb(160, 160, 160);
-    margin-top: 20px;
+    margin-top: 33px;
 }
 
 .clothes-specification .price {
     margin-bottom: 10px;
+    font-size: 16px;
+    margin: 16px 0 40px;
 }
 
 .cloths {
-    flex: 1;
     margin: 20px;
+    width: 50%;
+}
+
+.cloths:first-child {
+    max-width: 600px;
+}
+.cloths:last-child {
+    max-width: 400px;
 }
 
 .cloths img {
@@ -326,6 +346,9 @@ footer {
     border-top: 1px solid rgb(160, 160, 160);
     border-bottom: 1px solid rgb(160, 160, 160);
     align-items: center;
+    padding: 6px 5px 6px 0;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .cloths .specification li:last-child {
@@ -363,8 +386,10 @@ select option {
 .clothes-fabric-details {
     list-style: disc;
     margin-left: 60px;
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 40px;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
 }
 
 .description-title {
@@ -372,6 +397,14 @@ select option {
     font-size: 13px;
     font-weight: 400;
     margin-top: 32px;
+}
+
+.clothes-fabric-description {
+    font-size: 12px;
+}
+
+.features {
+    font-size: 13px;
 }
 
 .show-on-desktop {
@@ -430,6 +463,7 @@ select option {
     top: 8px;
     pointer-events: none;
     font-size: 16px;
+    transition: 0.3s ease;
 }
 
 .state div, .card-expirey-date div {
@@ -517,6 +551,25 @@ select option {
     display: none;
 }
 
+.hide {
+    display: none;
+}
+
+/* Tablet */
+@media (min-width: 361px ) {
+    .details-wrp ul {
+        display: flex;
+    }
+
+    .clothes-details {
+        margin: 0;
+    }
+
+    .remove-item {
+        align-items: flex-start;
+    }
+}
+
 
 /* Desktop */
 @media (min-width: 768px ) {
@@ -548,6 +601,10 @@ select option {
         display: none;
     }
 
+    .hide {
+        display: block;
+    }
+
     .show-on-desktop {
         display: inline-block;
     }
@@ -555,5 +612,48 @@ select option {
     .checkout-page, .detail {
         display: flex;
     }
-    
+
+    .clothes-details {
+        display: flex;
+    }
+
+    .details-wrp ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .remove-item {
+        align-items: center;
+    }
+
+}
+
+.moving-bar {
+    display: block;
+    position: relative;
+  }
+  
+.moving-bar::after, .moving-bar::before {
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgb(34, 34, 34);
+    width: 0;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.moving-bar::after {
+    right: 50%;
+}
+
+.moving-bar::before {
+    left: 50%;
+}
+  
+.input-area input:focus~span::after {
+    width: 50%; 
+}
+
+.input-area input:focus~span::before {
+    width: 50%; 
 }
