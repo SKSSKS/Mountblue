@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/todos.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="center">
+            <h1 class="todo-title">Todos</h1>
+            <form action="#" class="form" onsubmit="addTodos()">
+                <div class="input-area dsp-flex align-items-center">
+                    <input type="text" class="task shadow" id="todos" />
+                </div>
+            </form>
+            <div class="todo-list-wrp">
+                <ul class="shadow" id="todo-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/todos.js"></script>
+</body>
+</html>
